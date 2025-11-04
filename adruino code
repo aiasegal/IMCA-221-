@@ -1,0 +1,14 @@
+int sensor1 = 0;
+int sensor2 = 1;
+
+
+void setup() {
+Serial.begin(9600);
+
+}
+
+void loop() {
+Serial.print(analogRead(sensor1));
+Serial.print(" ");
+Serial.println(analogRead(sensor2));
+}
